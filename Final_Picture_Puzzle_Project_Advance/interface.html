@@ -1,0 +1,69 @@
+<!-- interface.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Match Game</title>
+  
+  <link rel="stylesheet" href="./styles.css">
+  
+  <style></style>
+
+</head>
+<body onload = "initialize();">
+	<div class = "a">
+		<h1>Picture Puzzle<h1>
+		<h2>Try to solve the picture puzzle with least amount of moves!</h2>
+		<h2><span id = "message"></h2>
+		<button onclick = "shuffle();">Shuffle</button> 
+		<button onclick = "location.reload();">Refresh</button> 
+		<button onclick = "switchVar();">Switch</button><br/><br/>
+	</div>
+
+	<div class = "audio">
+		<iframe src="chill.mp3" allow="autoplay" id="audio" hidden></iframe>
+	
+		<audio id = "player" controls autoplay loop>
+			<source src="chill.mp3" type="audio/mp3">
+		</audio>
+	</div>
+
+	
+	<table class = "board" id = "table">
+		<tr>
+			<td><img class = "picture" id = "1" src = "castle/img/image_part_001.jpg" /></td>
+			<td><img class = "picture" id = "2" src = "castle/img/image_part_002.jpg" /></td>
+			<td><img class = "picture" id = "3" src = "castle/img/image_part_003.jpg" /></td>
+			<td><img class = "picture" id = "4" src = "castle/img/image_part_004.jpg" /></td>
+		</tr>
+
+		<tr>
+			<td><img class = "picture" id = "5" src = "castle/img/image_part_005.jpg" /></td>
+			<td><img class = "picture" id = "6" src = "castle/img/image_part_006.jpg" /></td>
+			<td><img class = "picture" id = "7" src = "castle/img/image_part_007.jpg" /></td>
+			<td><img class = "picture" id = "8" src = "castle/img/image_part_008.jpg" /></td>
+		</tr>
+
+		<tr>
+			<td><img class = "picture" id = "9" src = "castle/img/image_part_009.jpg" /></td>
+			<td><img class = "picture" id = "10" src = "castle/img/image_part_0010.jpg" /></td>
+			<td><img class = "picture" id = "11" src = "castle/img/image_part_0011.jpg" /></td>
+			<td><img class = "picture" id = "12" src = "castle/img/image_part_0012.jpg" /></td>
+		</tr>
+
+		<tr>
+			<td><img class = "picture" id = "13" src = "castle/img/image_part_0013.jpg" /></td>
+			<td><img class = "picture" id = "14" src = "castle/img/image_part_0014.jpg" /></td>
+			<td><img class = "picture" id = "15" src = "castle/img/image_part_0015.jpg" /></td>
+			<td><img class = "picture" id = "16" src = "castle/img/image_part_0016.jpg" /></td>
+		</tr>
+	</table>
+	<div class = "a">
+		<h2>Moves: <span id = "move"></span><h2></h2>
+	</div>
+	<script src="./scripts.js"></script>
+</body>
+</html>
+

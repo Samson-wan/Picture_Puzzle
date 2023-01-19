@@ -1,0 +1,76 @@
+/* styles.css */
+
+body{
+	background: linear-gradient(#eecda3, #ef629f);
+}
+
+div.a{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+div.audio{
+  position: absolute;
+  top: 170px;
+  left: 23%;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 1200px;
+}
+
+.board{
+	border-style: solid;
+  table-layout:fixed;
+	border-width: 1px;
+	border-color: black;
+  border-spacing: 0;
+  background-color: black;
+}
+
+.picture{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 25%;
+}
+
+.picture:active {
+  transform: translateY(4px);
+  opacity: 0.5;
+}
+
+.picture.change{
+  box-shadow: 0px 0px 0px 5px gold;
+  opacity: 0.5;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #cf56ff;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #10d9d6;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: rgba(177,212,224, .7);
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: #df93c4;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+
+ 
