@@ -18,8 +18,8 @@ div.audio{
 
 div.video{
   position: absolute;
-  top: 90px;
-  right: 24%;
+  top: 0;
+  right: 0;
 }
 
 table{

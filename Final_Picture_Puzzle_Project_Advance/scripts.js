@@ -41,6 +41,8 @@ let getRandomIndex = () => { //arrow function of get random Integer.
     hasShuffle = true;
     initialize();
     count = 1;
+    Move = 0;
+    display.textContent = Move;
   }
  }
 
@@ -103,13 +105,13 @@ function isSame(a, b){ //Ternary Operator
         return;
       }
     }
-    lockBoard = true;
     displayMessage.textContent = "Congrats! You solve the puzzle in " + Move + " moves!";
     console.log("You won!");
+    startPlaying = false;
+    hasShuffle = false;
   }
 
   function switchVar(){
-    //if(lockBoard) return;
     startPlaying = false;
     hasShuffle = false;
     Move = 0;
