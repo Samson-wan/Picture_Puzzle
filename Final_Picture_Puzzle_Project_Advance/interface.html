@@ -14,9 +14,9 @@
 </head>
 <body onload = "initialize();">
 	<div class = "a">
-		<h1>Picture Puzzle<h1>
+		<h1>Picture Puzzle</h1>
 		<h2>Try to solve the picture puzzle with least amount of moves!</h2>
-		<h2><span id = "message"></h2>
+		<h2><span id = "message"></span></h2>
 		<button onclick = "shuffle();">Shuffle</button> 
 		<button onclick = "location.reload();">Refresh</button> 
 		<button onclick = "switchVar();">Switch</button><br/><br/>
@@ -28,6 +28,12 @@
 		<audio id = "player" controls autoplay loop>
 			<source src="chill.mp3" type="audio/mp3">
 		</audio>
+	</div>
+
+	<div class = "video">
+		<video width="200" height="150" controls muted>
+			<source src="yessir.mp4" type="video/mp4">
+		</video>
 	</div>
 
 	
@@ -61,7 +67,7 @@
 		</tr>
 	</table>
 	<div class = "a">
-		<h2>Moves: <span id = "move"></span><h2></h2>
+		<h2>Moves: <span id = "move"></span></h2>
 	</div>
 	<script src="./scripts.js"></script>
 </body>

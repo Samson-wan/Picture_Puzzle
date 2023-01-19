@@ -16,6 +16,12 @@ div.audio{
   left: 23%;
 }
 
+div.video{
+  position: absolute;
+  top: 90px;
+  right: 24%;
+}
+
 table{
   margin-left: auto;
   margin-right: auto;
