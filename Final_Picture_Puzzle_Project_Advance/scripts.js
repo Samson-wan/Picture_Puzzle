@@ -112,6 +112,12 @@ function isSame(a, b){ //Ternary Operator
   }
 
   function switchVar(){
+    if(firstCard !== null){ //check if the user want to switch puzzle only after one click
+      firstCard.classList.remove('change');
+      firstCard = null;
+      firstSource = null;
+    }
+
     startPlaying = false;
     hasShuffle = false;
     Move = 0;
